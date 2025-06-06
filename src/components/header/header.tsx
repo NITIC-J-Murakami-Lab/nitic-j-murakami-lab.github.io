@@ -20,7 +20,9 @@ type NavItemProps = {
 const NavItem: React.FC<NavItemProps> = (props) => {
   return (
     <li className={navItem}>
-      <span className={navItemText}>{props.title}</span>
+      <a href={props.href} className={navItem}>
+        <span className={navItemText}>{props.title}</span>
+      </a>
     </li>
   );
 };
@@ -49,8 +51,7 @@ export const Header: React.FC = () => {
         <ul className={navList}>
           <NavItem title="Home" href="/" />
           <NavItem title="Research" href="/research" />
-          <NavItem title="Publications" href="/publications" />
-          <NavItem title="People" href="/people" />
+          <NavItem title="Member" href="/member" />
           <NavItem title="Contact" href="/contact" />
         </ul>
       </nav>
