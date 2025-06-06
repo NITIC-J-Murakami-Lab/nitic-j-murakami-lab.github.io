@@ -1,9 +1,11 @@
+import React from "react";
+
 import { main, page } from "./page.css.ts";
 
 import { Header } from "../components/header/header.tsx";
 import { Footer } from "../components/footer/footer.tsx";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className={page}>
       <Header />
@@ -14,4 +16,6 @@ export default function Home() {
       <Footer />
     </div>
   );
-}
+};
+
+export default Home;
