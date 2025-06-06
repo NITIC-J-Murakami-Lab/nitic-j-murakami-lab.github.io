@@ -20,22 +20,23 @@ const Home: React.FC = () => {
           height={100}
         />
         <h1>Welcome to Murakami Lab</h1>
-        <p>Exploring the frontiers of science and technology.</p>
+        <p>Data Science and AI Research Laboratory</p>
         <section className={section}>
           <h2>Laboratory Theme</h2>
           <p>
-            Our laboratory focuses on the intersection of artificial
-            intelligence and data science, aiming to solve real-world problems
-            using advanced computational methods.
+            Wide-ranging research in the fields of machine learning and deep
+            learning and their implementation in society.
           </p>
         </section>
         <section className={section}>
           <h2>Research Topics</h2>
           <ul className={researchList}>
-            <li>Large Language Models (LLM)</li>
             <li>Natural Language Processing (NLP)</li>
             <li>Topic Modeling</li>
-            <li>Reinforcement Learning (RL)</li>
+            <li>Large Language Models (LLM)</li>
+            <li>Robotics and Reinforcement Learning (RL)</li>
+            <li>Application Development with LLM</li>
+            <li>Voice Sound Synthesis</li>
           </ul>
         </section>
       </main>
