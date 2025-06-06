@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
 
-import { page } from "./common.css.ts";
-import { main, section, researchList, logo, title } from "./styles.css.ts";
+import commonStyles from "./common.module.scss";
+import styles from "./styles.module.scss";
 
 import { Header } from "../components/header/header.tsx";
 import { Footer } from "../components/footer/footer.tsx";
 
 const Home: React.FC = () => {
   return (
-    <div className={page}>
+    <div className={commonStyles.page}>
       <Header />
-      <main className={main}>
+      <main className={styles.main}>
         <Image
-          className={logo}
+          className={styles.logo}
           src={"/logo.svg"}
           alt="Murakami Lab Logo"
           width={200}
@@ -21,19 +21,19 @@ const Home: React.FC = () => {
         />
         <section>
           <div>Welcome to</div>
-          <h1 className={title}>Murakami Lab</h1>
+          <h1 className={styles.title}>Murakami Lab</h1>
           <p>Data Science and AI Research Laboratory</p>
         </section>
-        <section className={section}>
+        <section className={styles.section}>
           <h2>Laboratory Theme</h2>
           <p>
             Wide-ranging research in the fields of machine learning and deep
             learning and their implementation in society.
           </p>
         </section>
-        <section className={section}>
+        <section className={styles.section}>
           <h2>Research Topics</h2>
-          <ul className={researchList}>
+          <ul className={styles.researchList}>
             <li>Natural Language Processing (NLP)</li>
             <li>Topic Modeling</li>
             <li>Large Language Models (LLM)</li>
