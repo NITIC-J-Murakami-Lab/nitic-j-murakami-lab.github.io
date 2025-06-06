@@ -22,7 +22,7 @@ export const title = style({
   margin: 0,
   fontSize: "2rem",
   fontWeight: "bold",
-  color: "#114111",
+  color: "#116111",
 });
 
 export const nav = style({
