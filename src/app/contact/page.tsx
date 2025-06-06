@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
-import { page, main } from "./styles.css.ts";
+import { main } from "./styles.css.ts";
+import { page } from "../common.css.ts";
 
 import { Header } from "../../components/header/header.tsx";
 import { Footer } from "../../components/footer/footer.tsx";
