@@ -6,8 +6,7 @@ export const footer = style({
   padding: "auto",
   textAlign: "center",
   alignContent: "center",
-  backgroundColor: "#282c34",
-  color: "#fff",
+  color: "#333",
   position: "relative",
   bottom: 0,
 });
