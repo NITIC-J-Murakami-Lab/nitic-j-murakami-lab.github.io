@@ -1,11 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import { page } from "./page.css.ts";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>Murakami Lab</main>
-      <footer className={styles.footer}></footer>
-    </div>
-  );
+  return <div className={page}>hello</div>;
 }
