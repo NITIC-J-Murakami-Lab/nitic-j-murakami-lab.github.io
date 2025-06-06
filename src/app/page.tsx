@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { page } from "./common.css.ts";
 import { main, section, researchList } from "./styles.css.ts";
@@ -11,6 +12,12 @@ const Home: React.FC = () => {
     <div className={page}>
       <Header />
       <main className={main}>
+        <Image
+          src={"/logo.svg"}
+          alt="Murakami Lab Logo"
+          width={200}
+          height={100}
+        />
         <h1>Welcome to Murakami Lab</h1>
         <p>Exploring the frontiers of science and technology.</p>
         <section className={section}>
