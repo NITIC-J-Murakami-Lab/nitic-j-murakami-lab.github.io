@@ -6,8 +6,8 @@ import { Header } from "../../components/header/header.tsx";
 import { Footer } from "../../components/footer/footer.tsx";
 
 export const metadata: Metadata = {
-  title: "Murakami Lab - Research",
-  description: "Research introductions of Murakami Lab",
+  title: "Murakami Lab - Contact",
+  description: "Contact page of Murakami Lab",
 };
 
 const Home: React.FC = () => {
