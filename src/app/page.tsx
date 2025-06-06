@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import { page } from "./common.css.ts";
-import { main, section, researchList } from "./styles.css.ts";
+import { main, section, researchList, logo } from "./styles.css.ts";
 
 import { Header } from "../components/header/header.tsx";
 import { Footer } from "../components/footer/footer.tsx";
@@ -13,6 +13,7 @@ const Home: React.FC = () => {
       <Header />
       <main className={main}>
         <Image
+          className={logo}
           src={"/logo.svg"}
           alt="Murakami Lab Logo"
           width={200}

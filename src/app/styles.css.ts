@@ -1,14 +1,5 @@
 import { style } from "@vanilla-extract/css";
 
-export const page = style({
-  padding: 0,
-  margin: 0,
-  width: "100%",
-  minHeight: "100vh",
-  boxSizing: "border-box",
-  backgroundColor: "#f0f0f0",
-});
-
 export const main = style({
   margin: 0,
   padding: 0,
@@ -29,4 +20,11 @@ export const researchList = style({
   textAlign: "left",
   display: "inline-block",
   margin: "0 auto",
+});
+
+export const logo = style({
+  width: "80%",
+  height: "auto",
+  maxWidth: "300px",
+  margin: "50px auto",
 });
