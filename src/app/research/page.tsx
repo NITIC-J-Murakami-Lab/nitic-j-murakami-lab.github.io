@@ -16,8 +16,8 @@ const Home: React.FC = () => {
     <div className={page}>
       <Header />
       <main className={main}>
-        <h1>Welcome to Murakami Lab</h1>
-        <p>Exploring the frontiers of science and technology.</p>
+        <h1>Research</h1>
+        <div>Now under construction</div>
       </main>
       <Footer />
     </div>
