@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import { MdMenu } from "react-icons/md";
+
 import {
   header,
   title,
@@ -23,10 +26,26 @@ const NavItem: React.FC<NavItemProps> = (props) => {
 };
 
 export const Header: React.FC = () => {
+  const [navVisible, setNavVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 780);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <header className={header}>
       <h1 className={title}>Murakami Lab</h1>
-      <nav className={nav}>
+      <nav
+        className={nav}
+        style={{ display: !navVisible && isMobile ? "none" : "block" }}
+      >
         <ul className={navList}>
           <NavItem title="Home" href="/" />
           <NavItem title="Research" href="/research" />
@@ -35,7 +54,9 @@ export const Header: React.FC = () => {
           <NavItem title="Contact" href="/contact" />
         </ul>
       </nav>
-      <button className={button}></button>
+      <button className={button} onClick={() => setNavVisible(!navVisible)}>
+        <MdMenu size={24} />
+      </button>
     </header>
   );
 };
