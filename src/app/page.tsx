@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import { page } from "./common.css.ts";
-import { main, section, researchList, logo } from "./styles.css.ts";
+import { main, section, researchList, logo, title } from "./styles.css.ts";
 
 import { Header } from "../components/header/header.tsx";
 import { Footer } from "../components/footer/footer.tsx";
@@ -19,8 +19,11 @@ const Home: React.FC = () => {
           width={200}
           height={100}
         />
-        <h1>Welcome to Murakami Lab</h1>
-        <p>Data Science and AI Research Laboratory</p>
+        <section>
+          <div>Welcome to</div>
+          <h1 className={title}>Murakami Lab</h1>
+          <p>Data Science and AI Research Laboratory</p>
+        </section>
         <section className={section}>
           <h2>Laboratory Theme</h2>
           <p>

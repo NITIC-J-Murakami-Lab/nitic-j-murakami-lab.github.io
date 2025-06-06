@@ -11,8 +11,15 @@ export const main = style({
   color: "#333",
 });
 
+export const title = style({
+  fontSize: "2.5rem",
+  fontWeight: "bold",
+  margin: "0",
+  color: "#116111",
+});
+
 export const section = style({
-  margin: "2rem 50px",
+  margin: "3rem 50px",
 });
 
 export const researchList = style({
