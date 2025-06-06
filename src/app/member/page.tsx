@@ -1,7 +1,8 @@
 import React from "react";
 import type { Metadata } from "next";
-import { main } from "./styles.css.ts";
-import { page } from "../common.css.ts";
+
+import commonStyles from "../common.module.scss";
+import styles from "./styles.module.scss";
 
 import { Header } from "../../components/header/header.tsx";
 import { Footer } from "../../components/footer/footer.tsx";
@@ -13,9 +14,9 @@ export const metadata: Metadata = {
 
 const Home: React.FC = () => {
   return (
-    <div className={page}>
+    <div className={commonStyles.page}>
       <Header />
-      <main className={main}>
+      <main className={styles.main}>
         <h1>Members</h1>
         <div>Now under construction</div>
       </main>

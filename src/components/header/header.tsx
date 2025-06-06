@@ -2,15 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { MdMenu } from "react-icons/md";
 
-import {
-  header,
-  title,
-  nav,
-  navList,
-  navItem,
-  navItemText,
-  button,
-} from "./styles.css.ts";
+import styles from "./header.module.scss";
 
 type NavItemProps = {
   title: string;
@@ -19,9 +11,9 @@ type NavItemProps = {
 
 const NavItem: React.FC<NavItemProps> = (props) => {
   return (
-    <li className={navItem}>
-      <a href={props.href} className={navItem}>
-        <span className={navItemText}>{props.title}</span>
+    <li className={styles.navItem}>
+      <a href={props.href} className={styles.navItem}>
+        <span className={styles.navItemText}>{props.title}</span>
       </a>
     </li>
   );
@@ -42,20 +34,23 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className={header}>
-      <h1 className={title}>Murakami Lab</h1>
+    <header className={styles.header}>
+      <h1 className={styles.title}>Murakami Lab</h1>
       <nav
-        className={nav}
+        className={styles.nav}
         style={{ display: !navVisible && isMobile ? "none" : "block" }}
       >
-        <ul className={navList}>
+        <ul className={styles.navList}>
           <NavItem title="Home" href="/" />
           <NavItem title="Research" href="/research" />
           <NavItem title="Member" href="/member" />
           <NavItem title="Contact" href="/contact" />
         </ul>
       </nav>
-      <button className={button} onClick={() => setNavVisible(!navVisible)}>
+      <button
+        className={styles.button}
+        onClick={() => setNavVisible(!navVisible)}
+      >
         <MdMenu size={24} />
       </button>
     </header>
