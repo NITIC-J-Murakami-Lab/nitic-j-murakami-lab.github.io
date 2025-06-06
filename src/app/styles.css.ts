@@ -12,7 +12,7 @@ export const main = style({
 });
 
 export const section = style({
-  marginTop: "2rem",
+  margin: "2rem 50px",
 });
 
 export const researchList = style({
