@@ -33,6 +33,7 @@ export const nav = style({
   flex: 1,
   "@media": {
     "screen and (max-width: 780px)": {
+      display: "none",
       padding: "20px",
       position: "fixed",
       top: 60,
