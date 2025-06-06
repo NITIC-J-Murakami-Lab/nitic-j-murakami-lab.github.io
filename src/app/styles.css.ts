@@ -19,3 +19,14 @@ export const main = style({
   fontSize: "1.2rem",
   color: "#333",
 });
+
+export const section = style({
+  marginTop: "2rem",
+});
+
+export const researchList = style({
+  listStyle: "disc",
+  textAlign: "left",
+  display: "inline-block",
+  margin: "0 auto",
+});
