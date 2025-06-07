@@ -22,7 +22,8 @@ const Home: React.FC = () => {
         <section>
           <div>Welcome to</div>
           <h1 className={styles.title}>Murakami Lab</h1>
-          <p>Data Science and AI Research Laboratory</p>
+          <div>@ ICHINOSEKI-KOSEN</div>
+          <p>Data Science and Soft Computing Laboratory</p>
         </section>
         <section className={styles.section}>
           <h2>Laboratory Theme</h2>
@@ -34,12 +35,17 @@ const Home: React.FC = () => {
         <section className={styles.section}>
           <h2>Research Topics</h2>
           <ul className={styles.researchList}>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Topic Modeling</li>
-            <li>Large Language Models (LLM)</li>
+            <li>
+              Natural Language Processing (NLP)
+              <ul>
+                <li>Large Language Models (LLM)</li>
+                <li>Application Development with LLM</li>
+                <li>Topic Modeling</li>
+              </ul>
+            </li>
+            <li>Data Mining</li>
             <li>Robotics and Reinforcement Learning (RL)</li>
-            <li>Application Development with LLM</li>
-            <li>Voice Sound Synthesis</li>
+            <li>Video Processing</li>
           </ul>
         </section>
       </main>
