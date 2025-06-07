@@ -45,6 +45,7 @@ export const Header: React.FC = () => {
           <NavItem title="Research" href="/research" />
           <NavItem title="Member" href="/member" />
           <NavItem title="Contact" href="/contact" />
+          <NavItem title="Access" href="/access" />
         </ul>
       </nav>
       <button
