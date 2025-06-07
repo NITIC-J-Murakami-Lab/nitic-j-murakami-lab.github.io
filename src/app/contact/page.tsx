@@ -17,8 +17,8 @@ const Home: React.FC = () => {
     <div className={commonStyles.page}>
       <Header />
       <main className={styles.main}>
-        <h1>Contacts</h1>
-        <section>
+        <h1>Contact</h1>
+        <section className={commonStyles.section}>
           <h2>Contact via college</h2>
           <p>Please refer to the following link.</p>
           <a href="https://www.ichinoseki.ac.jp/techc/summary.html">
