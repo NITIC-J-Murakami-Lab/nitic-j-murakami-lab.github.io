@@ -25,14 +25,14 @@ const Home: React.FC = () => {
           <div>@ ICHINOSEKI-KOSEN</div>
           <p>Data Science and Soft Computing Laboratory</p>
         </section>
-        <section className={styles.section}>
+        <section className={commonStyles.section}>
           <h2>Laboratory Theme</h2>
           <p>
             Wide-ranging research in the fields of machine learning and deep
             learning and their implementation in society.
           </p>
         </section>
-        <section className={styles.section}>
+        <section className={commonStyles.section}>
           <h2>Research Topics</h2>
           <ul className={styles.researchList}>
             <li>
