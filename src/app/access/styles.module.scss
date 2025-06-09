@@ -9,6 +9,13 @@
   color: #333;
 }
 
+.address {
+  & > span {
+    padding: 0px 0.25rem;
+    display: inline-block;
+  }
+}
+
 .map {
   width: 90%;
   max-width: 1000px;
