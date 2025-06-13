@@ -21,7 +21,7 @@ const Home: React.FC = () => {
         <section className={commonStyles.section}>
           <h2>Map</h2>
           <p className={styles.address}>
-            <span>〒021-0902</span>
+            <span>〒021-8511</span>
             <span>岩手県一関市萩荘字高梨</span>
             <span>一関工業高等専門学校 4号棟</span>
           </p>
