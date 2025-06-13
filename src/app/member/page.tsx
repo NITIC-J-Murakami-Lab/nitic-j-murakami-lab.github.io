@@ -12,13 +12,38 @@ export const metadata: Metadata = {
   description: "Member introductions of Murakami Lab",
 };
 
+const MemberCard: React.FC<{ name: string; keywords: string[] }> = ({
+  name,
+  keywords,
+}) => {
+  return (
+    <div className={styles.card}>
+      <h3 className={styles.name}>{name}</h3>
+      <ul className={styles.keywords}>
+        {keywords.map((keyword) => (
+          <span key={keyword} className={styles.keyword}>
+            {`#${keyword}`}
+          </span>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 const Home: React.FC = () => {
   return (
     <div className={commonStyles.page}>
       <Header />
       <main className={styles.main}>
         <h1>Members</h1>
-        <div>Now under construction</div>
+        <p>Members introduction of the Murakami Lab</p>
+        <section className={styles.members}>
+          <h2>Supervisor</h2>
+          <MemberCard
+            name="Murakami Riki"
+            keywords={["NLP", "Topic Model", "Data Mining"]}
+          />
+        </section>
       </main>
       <Footer />
     </div>
