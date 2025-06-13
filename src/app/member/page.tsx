@@ -6,16 +6,24 @@ import styles from "./styles.module.scss";
 
 import { Header } from "../../components/header/header.tsx";
 import { Footer } from "../../components/footer/footer.tsx";
+import { types } from "util";
 
 export const metadata: Metadata = {
   title: "Murakami Lab - Member",
   description: "Member introductions of Murakami Lab",
 };
 
-const MemberCard: React.FC<{ name: string; keywords: string[] }> = ({
-  name,
-  keywords,
-}) => {
+type Sns = {
+  platform: string;
+  account: string;
+  url: string;
+};
+
+const MemberCard: React.FC<{
+  name: string;
+  keywords: string[];
+  sns: Sns[];
+}> = ({ name, keywords, sns }) => {
   return (
     <div className={styles.card}>
       <h3 className={styles.name}>{name}</h3>
@@ -26,6 +34,18 @@ const MemberCard: React.FC<{ name: string; keywords: string[] }> = ({
           </span>
         ))}
       </ul>
+      <div className={styles.sns}>
+        {sns.map(({ platform, account, url }) => (
+          <a
+            key={platform}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {`${platform}@${account}`}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
@@ -42,6 +62,18 @@ const Home: React.FC = () => {
           <MemberCard
             name="Murakami Riki"
             keywords={["NLP", "Topic Model", "Data Mining"]}
+            sns={[
+              {
+                platform: "researchmap",
+                account: "mriki",
+                url: "https://researchmap.jp/mriki",
+              },
+              {
+                platform: "GitHub",
+                account: "rsimd",
+                url: "https://github.com/rsimd",
+              },
+            ]}
           />
         </section>
       </main>
