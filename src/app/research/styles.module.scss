@@ -8,3 +8,44 @@
   font-size: 1.2rem;
   color: #333;
 }
+
+.research {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  text-align: left;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+
+  .title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin: 0px;
+  }
+  .authors {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+  .conference {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+  .date {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+}
