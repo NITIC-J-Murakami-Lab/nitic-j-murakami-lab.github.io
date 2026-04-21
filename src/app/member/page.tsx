@@ -42,7 +42,7 @@ const MemberCard: React.FC<{
             target="_blank"
             rel="noopener noreferrer"
           >
-            {`${platform}@${account}`}
+            {`${account}@${platform}`}
           </a>
         ))}
       </div>
